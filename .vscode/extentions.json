@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "shd101wyy.markdown-preview-enhanced",
+    "takumii.markdowntable",
+    "ionutvmi.path-autocomplete",
+    "wayou.vscode-todo-highlight",
+    "gruntfuggly.todo-tree",
+    "hediet.vscode-drawio",
+    "bierner.markdown-mermaid",
+    "marp-team.marp-vscode"
+  ]
+}

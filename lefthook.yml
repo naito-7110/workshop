@@ -1,0 +1,6 @@
+pre-commit:
+  parallel: true
+  commands:
+    build-slides:
+      run: |
+        pnpm build:slides

@@ -1,0 +1,31 @@
+name: Deploy Slides
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: pnpm/action-setup@v4
+
+      - run: pnpm install
+
+      - run: pnpm run build:slides
+
+      - run: touch slides/.nojekyll
+
+      - run: ls -laR slides
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./slides
+          force_orphan: true

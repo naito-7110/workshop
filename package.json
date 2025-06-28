@@ -1,0 +1,13 @@
+{
+  "name": "events",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build:slides": "node build-slides.js"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.0"
+   }
+}
