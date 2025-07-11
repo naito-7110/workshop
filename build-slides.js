@@ -24,7 +24,6 @@ for (const entry of entries) {
 
     for (const file of files) {
       const fileMatch = file.match(/^(.+)\.slide\.md$/)
-      console.log(fileMatch)
       if (fileMatch) {
         // ファイルのフルパス
         const slidePath = path.join(folderPath, file)

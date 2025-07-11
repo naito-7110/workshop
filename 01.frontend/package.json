@@ -5,6 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "build:typescript": "turbo build --filter @7110/typescript",
+    "dev:vue": "turbo dev --filter @7110/vue",
     "build": "turbo build"
   },
   "keywords": [],
