@@ -19,12 +19,12 @@ function greet(user: UserType) {
 
 const user: UserType = userSchema.parse({
   name: userNameSchema.parse('7110'),
-  age: userAgeSchema.parse(27)
+  age: userAgeSchema.parse(27),
 })
 
 greet(user)
 
-const priceSchema = z.number().int().nonnegative().brand<"PriceBrand">()
+const priceSchema = z.number().int().nonnegative().brand<'PriceBrand'>()
 export type PriceType = z.infer<typeof priceSchema>
 
 const price: PriceType = priceSchema.parse(100)

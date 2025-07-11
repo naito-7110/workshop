@@ -1,6 +1,6 @@
 # 社内勉強会登壇の備忘録
 
-[スライドまとめ](https://naito-7110.github.io/workshop/)
+[登壇資料まとめ](https://naito-7110.github.io/workshop/)
 
 ## 目次
 
